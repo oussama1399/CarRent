@@ -18,13 +18,13 @@ export function Header() {
             <Link href="/" className="hover:text-orange-600 transition-colors">
               Accueil
             </Link>
-            <Link href="#" className="hover:text-orange-600 transition-colors">
+            <Link href="/vehicules" className="hover:text-orange-600 transition-colors">
               Véhicules
             </Link>
-            <Link href="#" className="hover:text-orange-600 transition-colors">
+            <Link href="/tarifs" className="hover:text-orange-600 transition-colors">
               Tarifs
             </Link>
-            <Link href="#" className="hover:text-orange-600 transition-colors">
+            <Link href="/contact" className="hover:text-orange-600 transition-colors">
               Contact
             </Link>
           </nav>
@@ -49,13 +49,13 @@ export function Header() {
                 <Link href="/" className="text-lg font-semibold">
                   Accueil
                 </Link>
-                <Link href="#" className="text-lg font-semibold">
+                <Link href="/vehicules" className="text-lg font-semibold">
                   Véhicules
                 </Link>
-                <Link href="#" className="text-lg font-semibold">
+                <Link href="/tarifs" className="text-lg font-semibold">
                   Tarifs
                 </Link>
-                <Link href="#" className="text-lg font-semibold">
+                <Link href="/contact" className="text-lg font-semibold">
                   Contact
                 </Link>
                 <div className="flex items-center gap-2 mt-4">
