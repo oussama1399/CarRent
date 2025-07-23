@@ -10,7 +10,7 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "CarRental Pro - Location de voiture",
   description: "Louez la voiture parfaite pour votre voyage. Des véhicules de qualité, des prix compétitifs.",
-    generator: 'v0.dev'
+  generator: "v0.dev",
 }
 
 export default function RootLayout({

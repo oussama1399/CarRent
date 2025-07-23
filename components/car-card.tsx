@@ -1,9 +1,9 @@
-import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardFooter } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Users, Fuel, Settings, Star } from "lucide-react"
+import { SafeImage } from "@/components/safe-image"
 
 interface Car {
   id: string
@@ -24,12 +24,13 @@ export function CarCard({ car }: CarCardProps) {
   return (
     <Card className="overflow-hidden hover:shadow-lg transition-shadow">
       <div className="relative">
-        <Image
-          src={car.image || "/placeholder.svg"}
+        <SafeImage
+          src={car.image}
           alt={car.name}
           width={300}
           height={200}
           className="w-full h-48 object-cover"
+          fallbackText={`Image de ${car.name}`}
         />
         <Badge className="absolute top-2 left-2 bg-orange-600">{car.category}</Badge>
       </div>

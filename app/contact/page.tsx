@@ -22,12 +22,12 @@ export default function ContactPage() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    const whatsappMessage = `Bonjour, je vous contacte depuis votre site web.
+    const whatsappMessage = `Hello, I'm contacting you from your website.
     
-Nom: ${formData.name}
+Name: ${formData.name}
 Email: ${formData.email}
-Téléphone: ${formData.phone}
-Sujet: ${formData.subject}
+Phone: ${formData.phone}
+Subject: ${formData.subject}
 
 Message: ${formData.message}`
 
@@ -48,9 +48,9 @@ Message: ${formData.message}`
       <section className="bg-gradient-to-r from-slate-900 to-slate-700 text-white py-16">
         <div className="container mx-auto px-4">
           <div className="text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">Contactez-nous</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">Contact Us</h1>
             <p className="text-xl text-slate-200 max-w-2xl mx-auto">
-              Notre équipe est à votre disposition pour répondre à toutes vos questions
+              Our team is at your disposal to answer all your questions
             </p>
           </div>
         </div>
@@ -65,25 +65,25 @@ Message: ${formData.message}`
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2">
                     <Send className="h-5 w-5" />
-                    Envoyez-nous un message
+                    Send us a message
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <form onSubmit={handleSubmit} className="space-y-4">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       <div>
-                        <Label htmlFor="name">Nom complet *</Label>
+                        <Label htmlFor="name">Full Name *</Label>
                         <Input
                           id="name"
                           name="name"
                           value={formData.name}
                           onChange={handleChange}
                           required
-                          placeholder="Votre nom"
+                          placeholder="Your name"
                         />
                       </div>
                       <div>
-                        <Label htmlFor="phone">Téléphone *</Label>
+                        <Label htmlFor="phone">Phone *</Label>
                         <Input
                           id="phone"
                           name="phone"
@@ -105,18 +105,18 @@ Message: ${formData.message}`
                         value={formData.email}
                         onChange={handleChange}
                         required
-                        placeholder="votre@email.com"
+                        placeholder="your@email.com"
                       />
                     </div>
 
                     <div>
-                      <Label htmlFor="subject">Sujet</Label>
+                      <Label htmlFor="subject">Subject</Label>
                       <Input
                         id="subject"
                         name="subject"
                         value={formData.subject}
                         onChange={handleChange}
-                        placeholder="Objet de votre message"
+                        placeholder="Subject of your message"
                       />
                     </div>
 
@@ -128,14 +128,14 @@ Message: ${formData.message}`
                         value={formData.message}
                         onChange={handleChange}
                         required
-                        placeholder="Décrivez votre demande..."
+                        placeholder="Describe your request..."
                         rows={5}
                       />
                     </div>
 
                     <Button type="submit" className="w-full bg-orange-600 hover:bg-orange-700">
                       <MessageCircle className="h-4 w-4 mr-2" />
-                      Envoyer via WhatsApp
+                      Send via WhatsApp
                     </Button>
                   </form>
                 </CardContent>
@@ -146,15 +146,15 @@ Message: ${formData.message}`
             <div className="space-y-6">
               <Card>
                 <CardHeader>
-                  <CardTitle>Informations de Contact</CardTitle>
+                  <CardTitle>Contact Information</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div className="flex items-start gap-3">
                     <Phone className="h-5 w-5 text-orange-600 mt-1" />
                     <div>
-                      <h4 className="font-semibold">Téléphone</h4>
+                      <h4 className="font-semibold">Phone</h4>
                       <p className="text-muted-foreground">+212 634 350 272</p>
-                      <p className="text-sm text-muted-foreground">Disponible 24h/24, 7j/7</p>
+                      <p className="text-sm text-muted-foreground">Available 24/7</p>
                     </div>
                   </div>
 
@@ -163,17 +163,18 @@ Message: ${formData.message}`
                     <div>
                       <h4 className="font-semibold">Email</h4>
                       <p className="text-muted-foreground">contact@carrental.ma</p>
-                      <p className="text-sm text-muted-foreground">Réponse sous 24h</p>
+                      <p className="text-sm text-muted-foreground">Response within 24h</p>
                     </div>
                   </div>
 
                   <div className="flex items-start gap-3">
                     <MapPin className="h-5 w-5 text-orange-600 mt-1" />
                     <div>
-                      <h4 className="font-semibold">Adresse</h4>
+                      <h4 className="font-semibold">Address</h4>
                       <p className="text-muted-foreground">
-                        123 Avenue Mohammed V<br />
-                        Casablanca, Maroc
+                        123 Mohammed V Avenue
+                        <br />
+                        Casablanca, Morocco
                       </p>
                     </div>
                   </div>
@@ -181,11 +182,11 @@ Message: ${formData.message}`
                   <div className="flex items-start gap-3">
                     <Clock className="h-5 w-5 text-orange-600 mt-1" />
                     <div>
-                      <h4 className="font-semibold">Horaires d'ouverture</h4>
+                      <h4 className="font-semibold">Opening Hours</h4>
                       <div className="text-muted-foreground text-sm space-y-1">
-                        <p>Lundi - Vendredi : 8h00 - 20h00</p>
-                        <p>Samedi : 9h00 - 18h00</p>
-                        <p>Dimanche : 10h00 - 16h00</p>
+                        <p>Monday - Friday: 8:00 AM - 8:00 PM</p>
+                        <p>Saturday: 9:00 AM - 6:00 PM</p>
+                        <p>Sunday: 10:00 AM - 4:00 PM</p>
                       </div>
                     </div>
                   </div>
@@ -194,7 +195,7 @@ Message: ${formData.message}`
 
               <Card>
                 <CardHeader>
-                  <CardTitle>Contact Rapide</CardTitle>
+                  <CardTitle>Quick Contact</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-3">
                   <Button className="w-full bg-green-600 hover:bg-green-700" asChild>
@@ -207,7 +208,7 @@ Message: ${formData.message}`
                   <Button variant="outline" className="w-full bg-transparent" asChild>
                     <Link href="tel:+212634350272">
                       <Phone className="h-4 w-4 mr-2" />
-                      Appeler maintenant
+                      Call now
                     </Link>
                   </Button>
                 </CardContent>
@@ -215,21 +216,21 @@ Message: ${formData.message}`
 
               <Card>
                 <CardHeader>
-                  <CardTitle>Nos Agences</CardTitle>
+                  <CardTitle>Our Agencies</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <div className="space-y-4">
                     <div>
-                      <h4 className="font-semibold">Casablanca Centre</h4>
-                      <p className="text-sm text-muted-foreground">123 Avenue Mohammed V</p>
+                      <h4 className="font-semibold">Casablanca Center</h4>
+                      <p className="text-sm text-muted-foreground">123 Mohammed V Avenue</p>
                     </div>
                     <div>
-                      <h4 className="font-semibold">Aéroport Mohammed V</h4>
-                      <p className="text-sm text-muted-foreground">Terminal 1, Niveau Arrivées</p>
+                      <h4 className="font-semibold">Mohammed V Airport</h4>
+                      <p className="text-sm text-muted-foreground">Terminal 1, Arrivals Level</p>
                     </div>
                     <div>
                       <h4 className="font-semibold">Rabat</h4>
-                      <p className="text-sm text-muted-foreground">Avenue Hassan II</p>
+                      <p className="text-sm text-muted-foreground">Hassan II Avenue</p>
                     </div>
                   </div>
                 </CardContent>

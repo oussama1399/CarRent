@@ -6,15 +6,14 @@ export function Footer() {
     <footer className="bg-slate-900 text-white">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          {/* Logo et description */}
+          {/* Logo and description */}
           <div className="space-y-4">
             <Link href="/" className="flex items-center gap-2 font-bold text-xl">
               <Car className="h-6 w-6 text-orange-600" />
               <span>CarRental Pro</span>
             </Link>
             <p className="text-slate-300">
-              Votre partenaire de confiance pour la location de véhicules. Des voitures de qualité pour tous vos
-              déplacements.
+              Your trusted partner for vehicle rental. Quality cars for all your travels.
             </p>
             <div className="flex gap-4">
               <Facebook className="h-5 w-5 text-slate-400 hover:text-white cursor-pointer" />
@@ -23,18 +22,18 @@ export function Footer() {
             </div>
           </div>
 
-          {/* Liens rapides */}
+          {/* Quick links */}
           <div>
-            <h3 className="font-semibold mb-4">Liens rapides</h3>
+            <h3 className="font-semibold mb-4">Quick Links</h3>
             <div className="space-y-2">
-              <Link href="#" className="block text-slate-300 hover:text-white">
-                Nos véhicules
+              <Link href="/vehicles" className="block text-slate-300 hover:text-white">
+                Our Vehicles
               </Link>
-              <Link href="#" className="block text-slate-300 hover:text-white">
-                Tarifs
+              <Link href="/tariffs" className="block text-slate-300 hover:text-white">
+                Tariffs
               </Link>
-              <Link href="#" className="block text-slate-300 hover:text-white">
-                Conditions
+              <Link href="/contact" className="block text-slate-300 hover:text-white">
+                Contact
               </Link>
               <Link href="#" className="block text-slate-300 hover:text-white">
                 FAQ
@@ -47,16 +46,16 @@ export function Footer() {
             <h3 className="font-semibold mb-4">Services</h3>
             <div className="space-y-2">
               <Link href="#" className="block text-slate-300 hover:text-white">
-                Location courte durée
+                Short-term rental
               </Link>
               <Link href="#" className="block text-slate-300 hover:text-white">
-                Location longue durée
+                Long-term rental
               </Link>
               <Link href="#" className="block text-slate-300 hover:text-white">
-                Véhicules de luxe
+                Luxury vehicles
               </Link>
               <Link href="#" className="block text-slate-300 hover:text-white">
-                Assurance
+                Insurance
               </Link>
             </div>
           </div>
@@ -71,14 +70,14 @@ export function Footer() {
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="h-4 w-4 text-orange-600" />
-                <span className="text-slate-300">contact@carrental.fr</span>
+                <span className="text-slate-300">contact@carrental.ma</span>
               </div>
               <div className="flex items-start gap-2">
                 <MapPin className="h-4 w-4 text-orange-600 mt-1" />
                 <span className="text-slate-300">
-                  123 Avenue des Champs
+                  123 Mohammed V Avenue
                   <br />
-                  75008 Paris, France
+                  Casablanca, Morocco
                 </span>
               </div>
             </div>
@@ -86,9 +85,9 @@ export function Footer() {
         </div>
 
         <div className="border-t border-slate-700 mt-8 pt-8 text-center text-slate-400">
-          <p>&copy; 2024 CarRental Pro. Tous droits réservés.</p>
+          <p>&copy; 2024 CarRental Pro. All rights reserved.</p>
           <p className="text-sm mt-2">
-            Site web créé par <span className="text-orange-400 font-semibold">chattypixel</span>
+            Website created by <span className="text-orange-400 font-semibold">chattypixel</span>
           </p>
         </div>
       </div>

@@ -13,7 +13,7 @@ export function Header() {
             <span>CarRental Pro</span>
           </Link>
 
-          {/* Navigation desktop */}
+          {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-6">
             <Link href="/" className="hover:text-orange-600 transition-colors">
               Accueil
@@ -37,7 +37,7 @@ export function Header() {
             <Button className="bg-orange-600 hover:bg-orange-700">Réserver</Button>
           </div>
 
-          {/* Menu mobile */}
+          {/* Mobile Menu */}
           <Sheet>
             <SheetTrigger asChild>
               <Button variant="outline" size="icon" className="md:hidden bg-transparent">
